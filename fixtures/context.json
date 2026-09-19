@@ -1,0 +1,10 @@
+{
+  "domain": "monitoring-remediation",
+  "version": 1,
+  "facts": [
+    "自查分阶段推进",
+    "仪器校准与采样记录需要留痕",
+    "涉嫌犯罪线索需要跨部门移送"
+  ],
+  "sample_id": "sample-001"
+}
