@@ -1,10 +1,145 @@
 {
   "domain": "monitoring-remediation",
-  "version": 1,
+  "version": 2,
   "facts": [
     "自查分阶段推进",
     "仪器校准与采样记录需要留痕",
-    "涉嫌犯罪线索需要跨部门移送"
+    "涉嫌犯罪线索需要跨部门移送",
+    "机构资质、人员授权与仪器校准均按时间窗认定",
+    "更正保留原事实，补录必须引用旧记录并说明原因",
+    "错报漏报、敷衍整改、复核不通过、涉嫌犯罪移送按权限矩阵推进"
   ],
-  "sample_id": "sample-001"
+  "sample_id": "sample-001",
+  "generated_at": "2026-01-05T09:00:00Z",
+  "institutions": [
+    {
+      "institution_id": "inst-huajian-001",
+      "name": "华检环境监测(虚构)有限公司",
+      "credit_code": "91FICTION2026HUJ01X",
+      "qualifications": [
+        {
+          "qualification_id": "qual-cma-001",
+          "type": "检验检测机构资质认定(CMA)",
+          "certificate_no": "CMA-FIC-2023-0001",
+          "valid_from": "2023-06-01T00:00:00Z",
+          "valid_to": "2029-05-31T23:59:59Z",
+          "status": "有效"
+        },
+        {
+          "qualification_id": "qual-cnas-001",
+          "type": "实验室认可(CNAS)",
+          "certificate_no": "CNAS-FIC-2024-0007",
+          "valid_from": "2024-01-01T00:00:00Z",
+          "valid_to": "2028-12-31T23:59:59Z",
+          "status": "有效"
+        }
+      ]
+    },
+    {
+      "institution_id": "inst-lanzhou-002",
+      "name": "澜舟环境检测(虚构)有限公司",
+      "credit_code": "91FICTION2026LANZ02",
+      "qualifications": [
+        {
+          "qualification_id": "qual-cma-002",
+          "type": "检验检测机构资质认定(CMA)",
+          "certificate_no": "CMA-FIC-2022-0009",
+          "valid_from": "2022-09-01T00:00:00Z",
+          "valid_to": "2028-08-31T23:59:59Z",
+          "status": "有效"
+        }
+      ]
+    }
+  ],
+  "operators": [
+    {
+      "operator_id": "op-zhang-001",
+      "name": "张某(虚构)",
+      "institution_id": "inst-huajian-001",
+      "authorizations": [
+        {
+          "authorization_id": "auth-z-001",
+          "scope": "水和废水采样",
+          "valid_from": "2024-01-01T00:00:00Z",
+          "valid_to": "2027-12-31T23:59:59Z"
+        },
+        {
+          "authorization_id": "auth-z-002",
+          "scope": "环境空气和废气采样",
+          "valid_from": "2024-01-01T00:00:00Z",
+          "valid_to": "2027-12-31T23:59:59Z"
+        }
+      ]
+    },
+    {
+      "operator_id": "op-li-002",
+      "name": "李某(虚构)",
+      "institution_id": "inst-lanzhou-002",
+      "authorizations": [
+        {
+          "authorization_id": "auth-l-001",
+          "scope": "水和废水采样",
+          "valid_from": "2023-01-01T00:00:00Z",
+          "valid_to": "2025-12-31T23:59:59Z"
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "instrument_id": "ins-gc-001",
+      "name": "气相色谱仪(虚构型号GC-F1)",
+      "institution_id": "inst-huajian-001",
+      "calibrations": [
+        {
+          "calibration_id": "cal-2025-001",
+          "calibrated_at": "2025-09-01T00:00:00Z",
+          "valid_until": "2026-03-01T00:00:00Z",
+          "certificate_no": "JJ-FIC-2025-0001"
+        }
+      ]
+    },
+    {
+      "instrument_id": "ins-aa-002",
+      "name": "原子吸收分光光度计(虚构型号AA-F2)",
+      "institution_id": "inst-huajian-001",
+      "calibrations": [
+        {
+          "calibration_id": "cal-2026-001",
+          "calibrated_at": "2026-01-10T00:00:00Z",
+          "valid_until": "2027-01-10T00:00:00Z",
+          "certificate_no": "JJ-FIC-2026-0002"
+        }
+      ]
+    }
+  ],
+  "stage_deadlines": [
+    {"stage": "self_check", "name": "自查报告", "duration_days": 15},
+    {"stage": "rectification", "name": "整改落实", "duration_days": 30},
+    {"stage": "review", "name": "复核", "duration_days": 10}
+  ],
+  "permission_matrix": {
+    "false_report": {
+      "label": "错报漏报",
+      "action": "责令改正",
+      "roles": ["执法员", "执法负责人"]
+    },
+    "perfunctory_rectification": {
+      "label": "敷衍整改",
+      "action": "约谈并立案",
+      "roles": ["执法负责人"]
+    },
+    "review_failed": {
+      "label": "复核不通过",
+      "action": "退回重新整改",
+      "roles": ["复核员"]
+    },
+    "suspected_crime": {
+      "label": "涉嫌犯罪移送",
+      "action": "移送司法机关",
+      "propose_roles": ["执法员", "执法负责人"],
+      "approve_roles": ["法制审核员", "部门负责人"],
+      "execute_roles": ["执法负责人"]
+    }
+  }
 }
