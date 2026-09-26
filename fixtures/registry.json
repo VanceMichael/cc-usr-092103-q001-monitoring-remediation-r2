@@ -1,0 +1,215 @@
+[
+  {
+    "type": "registry.org_registered",
+    "payload": {
+      "org_id": "org-lvyuan",
+      "name": "绿源环境监测有限公司（虚构）",
+      "qualification_no": "Q-2024-LY-018",
+      "valid_from": "2024-01-01T00:00:00Z",
+      "valid_to": "2026-12-31T23:59:59Z",
+      "scope": ["water", "air", "noise"],
+      "recorded_at": "2024-01-03T10:00:00Z",
+      "reason": "检验检测机构资质认定登记"
+    }
+  },
+  {
+    "type": "registry.org_registered",
+    "payload": {
+      "org_id": "org-xinze",
+      "name": "新泽检测技术有限公司（虚构）",
+      "qualification_no": "Q-2023-XZ-107",
+      "valid_from": "2023-06-01T00:00:00Z",
+      "valid_to": "2025-05-31T23:59:59Z",
+      "scope": ["water"],
+      "recorded_at": "2023-06-05T10:00:00Z",
+      "reason": "检验检测机构资质认定登记"
+    }
+  },
+  {
+    "type": "registry.org_renewed",
+    "payload": {
+      "org_id": "org-xinze",
+      "name": "新泽检测技术有限公司（虚构）",
+      "qualification_no": "Q-2025-XZ-107R",
+      "valid_from": "2025-06-01T00:00:00Z",
+      "valid_to": "2028-05-31T23:59:59Z",
+      "scope": ["water", "soil"],
+      "recorded_at": "2025-05-20T10:00:00Z",
+      "reason": "资质到期前依法延续，扩项土壤"
+    }
+  },
+  {
+    "type": "registry.org_registered",
+    "payload": {
+      "org_id": "org-hengxin",
+      "name": "恒信理化分析中心（虚构）",
+      "qualification_no": "Q-2022-HX-066",
+      "valid_from": "2022-09-01T00:00:00Z",
+      "valid_to": "2026-08-31T23:59:59Z",
+      "scope": ["water"],
+      "recorded_at": "2022-09-06T10:00:00Z",
+      "reason": "检验检测机构资质认定登记"
+    }
+  },
+  {
+    "type": "registry.org_withdrawn",
+    "payload": {
+      "org_id": "org-hengxin",
+      "at": "2026-02-10T00:00:00Z",
+      "recorded_at": "2026-02-11T09:30:00Z",
+      "reason": "出具虚假报告，资质依法撤销退出"
+    }
+  },
+  {
+    "type": "registry.person_authorized",
+    "payload": {
+      "person_id": "p-chenming",
+      "name": "陈明（虚构）",
+      "org_id": "org-lvyuan",
+      "role_title": "水质采样操作员",
+      "valid_from": "2024-03-01T00:00:00Z",
+      "recorded_at": "2024-03-04T10:00:00Z",
+      "reason": "岗位授权登记"
+    }
+  },
+  {
+    "type": "registry.person_authorized",
+    "payload": {
+      "person_id": "p-liuna",
+      "name": "刘娜（虚构）",
+      "org_id": "org-lvyuan",
+      "role_title": "质量负责人",
+      "valid_from": "2024-02-01T00:00:00Z",
+      "recorded_at": "2024-02-05T10:00:00Z",
+      "reason": "岗位授权登记"
+    }
+  },
+  {
+    "type": "registry.person_authorized",
+    "payload": {
+      "person_id": "p-zhaolei",
+      "name": "赵磊（虚构）",
+      "org_id": "org-lvyuan",
+      "role_title": "整改联络员",
+      "valid_from": "2025-01-01T00:00:00Z",
+      "recorded_at": "2025-01-06T10:00:00Z",
+      "reason": "岗位授权登记"
+    }
+  },
+  {
+    "type": "registry.instrument_registered",
+    "payload": {
+      "instrument_id": "inst-wq-09",
+      "name": "便携式水质多参数分析仪",
+      "org_id": "org-lvyuan",
+      "serial_no": "SN-WQ09-2217",
+      "recorded_at": "2024-05-10T10:00:00Z"
+    }
+  },
+  {
+    "type": "registry.instrument_calibrated",
+    "payload": {
+      "instrument_id": "inst-wq-09",
+      "certificate_no": "CAL-2025-1102",
+      "calibrating_org": "市计量测试研究院（虚构）",
+      "calibrated_at": "2025-11-02T00:00:00Z",
+      "valid_from": "2025-11-02T00:00:00Z",
+      "valid_until": "2026-05-01T00:00:00Z",
+      "recorded_at": "2025-11-05T14:00:00Z",
+      "note": "例行校准，收录及时"
+    }
+  },
+  {
+    "type": "registry.instrument_calibrated",
+    "payload": {
+      "instrument_id": "inst-wq-09",
+      "certificate_no": "CAL-2026-0315X",
+      "calibrating_org": "某外协校准机构（虚构）",
+      "calibrated_at": "2026-02-28T00:00:00Z",
+      "valid_from": "2026-03-01T00:00:00Z",
+      "valid_until": "2026-09-01T00:00:00Z",
+      "recorded_at": "2026-04-02T15:20:00Z",
+      "note": "执法核查后机构补交的证书，声称自3月1日起有效"
+    }
+  },
+  {
+    "type": "registry.instrument_registered",
+    "payload": {
+      "instrument_id": "inst-kq-12",
+      "name": "大气综合采样器",
+      "org_id": "org-lvyuan",
+      "serial_no": "SN-KQ12-0931",
+      "recorded_at": "2024-06-01T10:00:00Z"
+    }
+  },
+  {
+    "type": "registry.instrument_calibrated",
+    "payload": {
+      "instrument_id": "inst-kq-12",
+      "certificate_no": "CAL-2025-0820",
+      "calibrating_org": "市计量测试研究院（虚构）",
+      "calibrated_at": "2025-08-20T00:00:00Z",
+      "valid_from": "2025-08-20T00:00:00Z",
+      "valid_until": "2026-02-19T00:00:00Z",
+      "recorded_at": "2025-08-25T10:00:00Z",
+      "note": "该证书到期后未及时续校"
+    }
+  },
+  {
+    "type": "deadline.phase_set",
+    "payload": {
+      "phase": "self_check_stage_1",
+      "days": 20,
+      "description": "自查第一阶段：摸底建档与数据回溯",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  },
+  {
+    "type": "deadline.phase_set",
+    "payload": {
+      "phase": "self_check_stage_2",
+      "days": 45,
+      "description": "自查第二阶段：集中整改与验收",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  },
+  {
+    "type": "deadline.phase_set",
+    "payload": {
+      "phase": "rectification",
+      "days": 30,
+      "description": "收到整改通知后法定整改期限",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  },
+  {
+    "type": "rule.enforcement_set",
+    "payload": {
+      "fault_type": "misreport",
+      "action": "责令改正并处罚款；涉嫌提供虚假证明文件的，移送公安机关",
+      "authority_role": "eco_inspector",
+      "description": "错报（含篡改、编造监测数据）处置权限",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  },
+  {
+    "type": "rule.enforcement_set",
+    "payload": {
+      "fault_type": "omission",
+      "action": "责令限期补报；逾期不补报的处罚款",
+      "authority_role": "eco_inspector",
+      "description": "漏报处置权限",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  },
+  {
+    "type": "rule.enforcement_set",
+    "payload": {
+      "fault_type": "perfunctory_rectification",
+      "action": "认定敷衍整改，退回重改并约谈机构负责人，依法从重",
+      "authority_role": "eco_reviewer",
+      "description": "敷衍整改认定权限",
+      "recorded_at": "2026-01-05T09:00:00Z"
+    }
+  }
+]
